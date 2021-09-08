@@ -60,7 +60,7 @@ nav {
   -webkit-transition: max-height 0.3s;
   -moz-transition: max-height 0.3s;
   -o-transition: max-height 0.3s;
-  transition: max-height 0.2s;
+  transition: max-height 0.1s;
 }
 
 nav ul {
@@ -116,6 +116,16 @@ nav a {
     padding: 20px 10px;
     width: auto;
   }
+
+  .icon-header {
+    display: none;
+  }
+}
+
+.icon-header {
+  margin-left: 182px;
+  width: 35px;
+  height: 35px;
 }
 
 .catalogo {
@@ -172,4 +182,92 @@ nav a {
   margin-left: 10px;
   height: 30px;
   width: 30px;
+}
+
+/*Style info.html*/
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 900px;
+  width: 100%;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+  margin-top: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.info-contenedor {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 255px;
+  width: 80%;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*Style contacto.html*/
+
+.formulario {
+  margin-top: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+  color: white;
+}
+
+.contenedor-titulo-form {
+  margin-top: 30px;
+}
+
+.contenedor-form {
+  padding: 0 38px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 18px;
+  display: block;
+  color: white;
+}
+
+.input-text,
+.textarea {
+  font-family: "Roboto";
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.textarea {
+  min-height: 200px;
+}
+
+.button {
+  margin-top: 50px;
+  font-family: "Roboto";
+  width: 100%;
+  background-color: #ffd953;
+  min-height: 40px;
+  border: none;
 }
