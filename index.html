@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catalogo Efimera Socks</title>
+    <title>Efimera Socks</title>
     <link rel="shortcut icon" href="./img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +17,12 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="http://minimaldev.com">Efimera Socks</a>
+      <a class="logo" href="#">Efimera Socks</a>
       <input id="nav" type="checkbox" />
       <label for="nav"></label>
       <nav>
         <ul>
-          <li><a href="./index.html">Catalogo</a></li>
+          <li><a href="./index.html">Catálogo</a></li>
           <li><a href="./info.html">Info</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
           <a href="https://www.instagram.com/efimera.socks" target="blank"
@@ -32,32 +32,21 @@
       </nav>
     </header>
 
-    <section class="catalogo">
-      <h2 class="titulo-catalogo">Catálogo</h2>
-      <div class="sock-contenedor">
-        <img src="./img/IMG_20210831_120543_1.jpg" alt="" class="sock-img" />
-        <div class="sock-description">
-          <h5 class="titulo">Medias I dont Give a Fuck</h5>
-          <div class="precio">$380</div>
-        </div>
-      </div>
+    <h2 class="titulo-catalogo">Catálogo</h2>
 
-      <div class="sock-contenedor">
-        <img src="./img/IMG_20210713_130524.jpg" alt="" class="sock-img" />
-        <div class="sock-description">
-          <h5 class="titulo">Medias Fuck You</h5>
-          <div class="precio">$380</div>
-        </div>
-      </div>
+    <section class="catalogo-contenedor"></section>
 
-      <div class="sock-contenedor">
-        <img src="./img/IMG_20210809_113933.jpg" alt="" class="sock-img" />
-        <div class="sock-description">
-          <h5 class="titulo">Medias Star Wars</h5>
-          <div class="precio">$380</div>
+    <template id="catalogo-template">
+      <div class="sock-card">
+        <div class="sock-contenedor">
+          <img src="./img/IMG_20210831_120543_1.jpg" alt="" class="sock-img" />
+          <div class="sock-description">
+            <h5 class="titulo"></h5>
+            <div class="precio"></div>
+          </div>
         </div>
       </div>
-    </section>
+    </template>
 
     <footer class="footer">
       <div class="info-footer">Contactanos</div>

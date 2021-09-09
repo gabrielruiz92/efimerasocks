@@ -128,13 +128,14 @@ nav a {
   height: 35px;
 }
 
-.catalogo {
+.sock-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .titulo-catalogo {
+  text-align: center;
   margin: 75px 0px 15px 0px;
 }
 
@@ -270,4 +271,8 @@ h1 {
   background-color: #ffd953;
   min-height: 40px;
   border: none;
+}
+p {
+  margin: 0px;
+  font-size: 15px;
 }
