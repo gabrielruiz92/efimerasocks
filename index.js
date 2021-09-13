@@ -14,26 +14,20 @@ function addSocksCard(params) {
 
 function getSocks() {
     const api = "https://cdn.contentful.com/spaces/9q9oe5euxfzw/environments/master/entries?access_token=-V2I4w9sW7Kn7oNQU0ieDpn3YEvsatJ1gNcyRGfqiPw";
-
     return fetch(api)
         .then(res => {
             return res.json()
         })
         .then((data) => {
 
-            console.log(data);
-
             var fieldsCollections = data.includes.Asset.map((item) => {
-
                 return {
                     title: item.fields.title,
                     price: item.fields.description,
                     img: item.fields.file.url
                 }
             })
-
             return fieldsCollections;
-
         });
 }
 
@@ -43,6 +37,7 @@ function main() {
             addSocksCard(m);
         }
     })
+
 };
 
 main()

@@ -49,6 +49,17 @@ header label:after {
   float: left;
   font-weight: bold;
   font-size: 1.5em;
+  font-size: 14px;
+}
+
+.sock-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-header {
+  width: 30px;
+  height: 30px;
 }
 
 nav {
@@ -77,6 +88,8 @@ nav li {
 nav a {
   padding: 10px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #nav {
@@ -121,11 +134,62 @@ nav a {
     display: none;
   }
 }
-
 .icon-header {
-  margin-left: 182px;
-  width: 35px;
-  height: 35px;
+  margin: 0 auto;
+}
+
+.inicio {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+  align-items: center;
+  flex-direction: column;
+}
+
+.efimera-socks {
+  margin-top: 90px;
+  width: 300px;
+  height: 150px;
+}
+
+.nuestro-catalogo {
+  width: 280px;
+  margin-top: 15px;
+  border-top: 1px solid rgb(56, 56, 56);
+  padding-top: 5px;
+}
+
+@media only screen and (min-width: 700px) {
+  .inicio {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .efimera-socks {
+    margin-top: 0px;
+    width: 450px;
+    height: 250px;
+  }
+
+  .nuestro-catalogo {
+    width: 350px;
+    border-left: 1px solid rgb(56, 56, 56);
+    padding-left: 15px;
+    border-top: none;
+  }
+}
+
+.titulo-catalogo {
+  text-align: center;
+  margin: 15px 0px 15px 0px;
 }
 
 .catalogo-contenedor {
@@ -137,11 +201,6 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.titulo-catalogo {
-  text-align: center;
-  margin: 75px 0px 15px 0px;
 }
 
 .sock-contenedor {
@@ -179,7 +238,7 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
-    width: 900px;
+
     margin: 0 auto;
   }
   .sock-img {
@@ -200,7 +259,6 @@ nav a {
   position: fixed;
   bottom: 0;
   left: 0;
-  border-top: 3px solid #c850c0;
 }
 .info-footer {
   margin-top: 5px;
@@ -302,3 +360,5 @@ p {
   margin: 0px;
   font-size: 15px;
 }
+
+/*///////////////////////////////////*/
